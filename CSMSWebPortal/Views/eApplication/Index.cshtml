@@ -1,0 +1,190 @@
+﻿@model IEnumerable<CSMSWebPortal.DbModel.E_Application>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_Course)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_Img)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_DOB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_Contact)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_Fname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_Mname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_City)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_State)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_Pin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_ParentEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_Qualification1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_Qualification2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_Qualification3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_Lang1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_Lang2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_Lang3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_Lang4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_Relation1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_Relation2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_Relation3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_Relation4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_ExtraActivity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_ExtraInfo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Appl_Date)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_Course)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_Img)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_DOB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_Contact)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_Fname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_Mname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_City)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_State)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_Pin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_ParentEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_Qualification1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_Qualification2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_Qualification3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_Lang1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_Lang2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_Lang3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_Lang4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_Relation1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_Relation2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_Relation3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_Relation4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_ExtraActivity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_ExtraInfo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appl_Date)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Appl_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Appl_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Appl_ID })
+        </td>
+    </tr>
+}
+
+</table>

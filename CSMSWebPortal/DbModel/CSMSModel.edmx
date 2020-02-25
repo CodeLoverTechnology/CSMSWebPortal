@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CSMS_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="E_Application">
+          <Key>
+            <PropertyRef Name="Appl_ID" />
+          </Key>
+          <Property Name="Appl_ID" Type="int" Nullable="false" />
+          <Property Name="Appl_Course" Type="varchar(max)" />
+          <Property Name="Appl_Img" Type="image" />
+          <Property Name="Appl_Name" Type="varchar(max)" />
+          <Property Name="Appl_Email" Type="varchar(max)" />
+          <Property Name="Appl_DOB" Type="date" />
+          <Property Name="Appl_Contact" Type="varchar(max)" />
+          <Property Name="Appl_Fname" Type="varchar(max)" />
+          <Property Name="Appl_Mname" Type="varchar(max)" />
+          <Property Name="Appl_Address" Type="varchar(max)" />
+          <Property Name="Appl_City" Type="varchar(max)" />
+          <Property Name="Appl_State" Type="varchar(max)" />
+          <Property Name="Appl_Pin" Type="varchar(max)" />
+          <Property Name="Appl_ParentEmail" Type="varchar(max)" />
+          <Property Name="Appl_Qualification1" Type="varchar(max)" />
+          <Property Name="Appl_Qualification2" Type="varchar(max)" />
+          <Property Name="Appl_Qualification3" Type="varchar(max)" />
+          <Property Name="Appl_Lang1" Type="varchar(max)" />
+          <Property Name="Appl_Lang2" Type="varchar(max)" />
+          <Property Name="Appl_Lang3" Type="varchar(max)" />
+          <Property Name="Appl_Lang4" Type="varchar(max)" />
+          <Property Name="Appl_Relation1" Type="varchar(max)" />
+          <Property Name="Appl_Relation2" Type="varchar(max)" />
+          <Property Name="Appl_Relation3" Type="varchar(max)" />
+          <Property Name="Appl_Relation4" Type="varchar(max)" />
+          <Property Name="Appl_ExtraActivity" Type="varchar(max)" />
+          <Property Name="Appl_ExtraInfo" Type="varchar(max)" />
+          <Property Name="Appl_Date" Type="datetime" />
+        </EntityType>
+        <EntityContainer Name="CSMS_DBModelStoreContainer">
+          <EntitySet Name="E_Application" EntityType="Self.E_Application" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CSMS_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="E_Application">
+          <Key>
+            <PropertyRef Name="Appl_ID" />
+          </Key>
+          <Property Name="Appl_ID" Type="Int32" Nullable="false" />
+          <Property Name="Appl_Course" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_Img" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Appl_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_DOB" Type="DateTime" Precision="0" />
+          <Property Name="Appl_Contact" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_Fname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_Mname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_City" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_State" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_Pin" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_ParentEmail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_Qualification1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_Qualification2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_Qualification3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_Lang1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_Lang2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_Lang3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_Lang4" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_Relation1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_Relation2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_Relation3" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_Relation4" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_ExtraActivity" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_ExtraInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Appl_Date" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="CSMS_DBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="E_Application" EntityType="Self.E_Application" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CSMS_DBModelStoreContainer" CdmEntityContainer="CSMS_DBEntities">
+          <EntitySetMapping Name="E_Application">
+            <EntityTypeMapping TypeName="CSMS_DBModel.E_Application">
+              <MappingFragment StoreEntitySet="E_Application">
+                <ScalarProperty Name="Appl_ID" ColumnName="Appl_ID" />
+                <ScalarProperty Name="Appl_Course" ColumnName="Appl_Course" />
+                <ScalarProperty Name="Appl_Img" ColumnName="Appl_Img" />
+                <ScalarProperty Name="Appl_Name" ColumnName="Appl_Name" />
+                <ScalarProperty Name="Appl_Email" ColumnName="Appl_Email" />
+                <ScalarProperty Name="Appl_DOB" ColumnName="Appl_DOB" />
+                <ScalarProperty Name="Appl_Contact" ColumnName="Appl_Contact" />
+                <ScalarProperty Name="Appl_Fname" ColumnName="Appl_Fname" />
+                <ScalarProperty Name="Appl_Mname" ColumnName="Appl_Mname" />
+                <ScalarProperty Name="Appl_Address" ColumnName="Appl_Address" />
+                <ScalarProperty Name="Appl_City" ColumnName="Appl_City" />
+                <ScalarProperty Name="Appl_State" ColumnName="Appl_State" />
+                <ScalarProperty Name="Appl_Pin" ColumnName="Appl_Pin" />
+                <ScalarProperty Name="Appl_ParentEmail" ColumnName="Appl_ParentEmail" />
+                <ScalarProperty Name="Appl_Qualification1" ColumnName="Appl_Qualification1" />
+                <ScalarProperty Name="Appl_Qualification2" ColumnName="Appl_Qualification2" />
+                <ScalarProperty Name="Appl_Qualification3" ColumnName="Appl_Qualification3" />
+                <ScalarProperty Name="Appl_Lang1" ColumnName="Appl_Lang1" />
+                <ScalarProperty Name="Appl_Lang2" ColumnName="Appl_Lang2" />
+                <ScalarProperty Name="Appl_Lang3" ColumnName="Appl_Lang3" />
+                <ScalarProperty Name="Appl_Lang4" ColumnName="Appl_Lang4" />
+                <ScalarProperty Name="Appl_Relation1" ColumnName="Appl_Relation1" />
+                <ScalarProperty Name="Appl_Relation2" ColumnName="Appl_Relation2" />
+                <ScalarProperty Name="Appl_Relation3" ColumnName="Appl_Relation3" />
+                <ScalarProperty Name="Appl_Relation4" ColumnName="Appl_Relation4" />
+                <ScalarProperty Name="Appl_ExtraActivity" ColumnName="Appl_ExtraActivity" />
+                <ScalarProperty Name="Appl_ExtraInfo" ColumnName="Appl_ExtraInfo" />
+                <ScalarProperty Name="Appl_Date" ColumnName="Appl_Date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
